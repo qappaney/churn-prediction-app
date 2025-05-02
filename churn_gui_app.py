@@ -11,7 +11,7 @@ st.title("📊 Customer Churn Prediction App")
 # Load and train model
 @st.cache_data
 def load_and_train():
-    df = pd.read_excel(r'E:\ITI(BI) - 4Months\Data Mining\Lab\Lab.02\churn_dataset.xlsx')
+    df = pd.read_excel('churn_dataset.xlsx')
     df['Sex'] = df['Sex'].replace({'Male': 1, 'Female': 0})
     df['Churn'] = df['Churn'].replace({'Yes': 1, 'No': 0})
 
